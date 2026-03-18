@@ -55,14 +55,15 @@ body {
 }
 @media (max-width: 600px) {
     .jewellery img, .Suits img, .dresses img {
-        max-width: 100px;
+        max-width: 50px;
         height: 150px;
         object-fit: cover;
-        justify-items: start
+        margin-left: 0;
     }
     .jewellery, .Suits, .dresses  {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 5px;
+        margin-left: 0;
     }
 }
