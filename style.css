@@ -42,7 +42,7 @@ header h3 {
 .navbar {
     color: white;
     text-decoration: none;
-    background-color: #333;
+    background-color: #443e38;
     padding: 15px;
 }
 .navbar a {
@@ -69,11 +69,31 @@ body {
 }
  .footer { background: #443e38; padding: 40px 32px 24px; }
   .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 32px; margin-bottom: 36px; }
-  .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: #f7f2eb; letter-spacing: 2px; margin-bottom: 12px; }
+  .footer-logo { font-family:serif; color: #f7f2eb; letter-spacing: 2px; margin-bottom: 12px; text-align: left;}
   .footer-tagline { font-size: 12px; color: #8a7a68; line-height: 1.7; font-weight: 300; }
-  .footer-col-title { font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: #b48f5b; margin-bottom: 16px; }
+  .footer-column {letter-spacing: 2.5px; text-transform: uppercase; color: #b48f5b; margin-bottom: 16px; }
   .footer-links { display: flex; flex-direction: column; gap: 10px; }
-  .footer-links a { font-size: 12px; color: #a1805c; text-decoration: none; }
+  .footer-links a { color: #a1805c; text-decoration: none; }
   .footer-bottom { border-top: 0.5px solid #a1805c; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; }
-  .footer-copy { font-size: 11px; color: #a1805c; }
+  .footer-copy {font-size: 11px; color: #a1805c; }
+
+.logo-initials {
+    width: 175px;
+    height: auto;
+    margin-top: 10px;
+    display: block;
+}
+.silver-jewellery ,.coloured-jewellery, .gold-jewellery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.silver-jewellery img, .coloured-jewellery img, .gold-jewellery img {
+    width: 100%;           
+    border-radius: 8px; 
+    height: 250px;       
+    object-fit: cover;
+    margin-right: 0;
+}
+
 
