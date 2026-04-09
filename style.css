@@ -15,12 +15,7 @@ header h3 {
   margin-top: 5px;
 }
 
-.navbar {
-    color: white;
-    text-decoration: none;
-    background-color: #443e38;
-    padding: 15px;
-}
+.navbar { color: white; text-decoration: none; background-color: #443e38; padding: 15px; display: flex; justify-content: space-between; }
 .navbar a {
     color: white;
     text-decoration: none;
@@ -77,3 +72,5 @@ body {
 .men-shoes img {width: 100%; border-radius: 8px; height: 250px; object-fit: cover; margin-right: 0; }   
 .men-shirts-pants { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }   
 .men-shirts-pants img {width: 100%; border-radius: 8px; height: 250px; object-fit: cover; margin-right: 0; }
+
+.shop-item {border: 1px solid #f0c0d0; border-radius: 5px; box-shadow: 0 4px 12px rgba(194, 24, 91, 0.12); background: #eeeaec; overflow: hidden; }
