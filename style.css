@@ -36,7 +36,7 @@ body {
 .footer-copy {font-size: 11px; color: #a1805c; }
 
 .logo-initials { width: 175px; height: auto; margin-top: 10px; display: block; }
-.nav-logo { width: 50px; height: auto; margin-right: 10px; font-size: 30px; display:flex; justify-content: flex-start;} 
+.navbar-brand { width: 50px; height: auto; margin-right: 10px; font-size: 30px; display:flex; justify-content: flex-start;} 
 .navbar { display: flex; justify-content: space-between; align-items: center; background-color: #443e38; padding: 10px 20px; }
 .nav-links { color: white; text-decoration: none; padding: 15px; display:flex; justify-content: flex-end; }
 .navbar a { color: white; text-decoration: none; margin: 0 10px; }
