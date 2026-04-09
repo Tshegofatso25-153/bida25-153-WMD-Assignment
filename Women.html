@@ -9,14 +9,14 @@
 </head>
 <body>
    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
             <a class="navbar-brand" href="index.html">FASHIONHUB</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
@@ -39,9 +39,24 @@
                         <a class="nav-link" href="Feedbackform.html">Feedback</a>
                     </li>
                 </ul>
+            
+        <div class="cart-container">
+                <button class="cart-btn" onclick="toggleCart()">
+                    Cart (<span id="cart-count">0</span>)
+                </button>
+            <div class="cart-dropdown" id="cartDropdown">
+                <h3>Your Cart</h3>
+                <div id="cart-items">
+                    <p class="empty-cart">Your cart is empty</p>
+                </div>
+                <div class="cart-total">
+                    <strong>Total: P<span id="cart-total">0</span></strong>
+                </div>
+                <button class="checkout-btn">Checkout</button>
             </div>
-          </div>
-        </nav>
+        </div>    
+        </div>
+    </nav>
 
         <h1>Women's Collection</h1>
     </header>
@@ -52,18 +67,18 @@
 
             <div class="shop-item">
                 <figure>
-                    <img src="images/women/dresses/Lena Mini Dress - Ivory.jpg" alt="Lena Mini Dress - Ivory">
+                    <img src="images/women/dresses/Lena Mini Dress - Ivory.jpg" alt="Lena Mini Dress - Ivory" class="img-fluid">
                 </figure>
                 <h2>Lena Mini Dress - Ivory</h2>
                     <div class="price">Price: P500</div>
-                <button class="AddToCart">
+                <button onclick="addToCart('Lena Mini Dress - Ivory', 500)" class="AddToCart">
                      Add to Cart
                 </button>
             </div>
 
             <div class="shop-item">          
                 <figure>
-                    <img src="images/women/dresses/butter yellow picnic dress.jpg" alt="Butter Yellow Picnic Dress">
+                    <img src="images/women/dresses/butter yellow picnic dress.jpg" alt="Butter Yellow Picnic Dress" class="img-fluid">
                 </figure>
                 <h2>Butter Yellow Picnic Dress</h2>
                     <div class="price">Price: P500</div>
@@ -74,7 +89,7 @@
 
             <div class="shop-item">
                 <figure>
-                    <img src="images/women/dresses/baby pink picnic dress.jpg" alt="Baby Pink Picnic Dress">
+                    <img src="images/women/dresses/baby pink picnic dress.jpg" alt="Baby Pink Picnic Dress" class="img-fluid">
                 </figure>
                 <h2>Baby Pink Picnic Dress</h2>
                     <div class="price">Price: P500</div>
@@ -85,7 +100,7 @@
 
             <div class="shop-item">
                  <figure>
-                    <img src="images/women/dresses/red long modest dress.jpg" alt="Red Long Modest Dress">
+                    <img src="images/women/dresses/red long modest dress.jpg" alt="Red Long Modest Dress" class="img-fluid">
                 </figure>
                 <h2>Red Long Modest Dress</h2>
                     <div class="price">Price: P500</div>
@@ -96,7 +111,7 @@
 
             <div class="shop-item">
                  <figure>
-                    <img src="images/women/dresses/long semi formal dress(black).webp" alt="Long Black Semi Formal Dress">
+                    <img src="images/women/dresses/long semi formal dress(black).webp" alt="Long Black Semi Formal Dress" class="img-fluid">
                 </figure>
                 <h2>Long Semi Formal Dress</h2>
                     <div class="price">Price: P500</div>
@@ -107,7 +122,7 @@
 
             <div class="shop-item">
                  <figure>
-                    <img src="images/women/dresses/long semi formal dress(light grren).webp" alt="Long Light Green Semi Formal Dress">
+                    <img src="images/women/dresses/long semi formal dress(light grren).webp" alt="Long Light Green Semi Formal Dress" class="img-fluid">
                 </figure>
                 <h2>Long Light Green Semi Formal Dress</h2>
                     <div class="price">Price: P500</div>
@@ -118,7 +133,7 @@
 
             <div class="shop-item">
                  <figure>
-                    <img src="images/women/dresses/maroon picnic dress.jpg" alt="Maroon Picnic Dress">
+                    <img src="images/women/dresses/maroon picnic dress.jpg" alt="Maroon Picnic Dress" class="img-fluid">
                 </figure>
                 <h2>Maroon Picnic Dress</h2>
                     <div class="price">Price: P500</div>
@@ -129,7 +144,7 @@
 
             <div class="shop-item">
                  <figure>
-                    <img src="images/women/dresses/pink high-neck maxi dress.jpg" alt="Pink High-Neck Maxi Dress">
+                    <img src="images/women/dresses/pink high-neck maxi dress.jpg" alt="Pink High-Neck Maxi Dress" class="img-fluid">
                 </figure>
                 <h2>Pink High-Neck Maxi Dress</h2>
                     <div class="price">Price: P500</div>
@@ -144,7 +159,7 @@
         
             <div class="shop-item">
                 <figure>
-                    <img src="images/women/bags/Babay Blue Hermes Birkin.jpg" alt="Baby Blue Hermes Birkin Bag">
+                    <img src="images/women/bags/Babay Blue Hermes Birkin.jpg" alt="Baby Blue Hermes Birkin Bag" class="img-fluid">
                 </figure>
                 <h2>Baby Blue Hermes Birkin Bag</h2>
                     <div class="price">Price: P500</div>
@@ -155,7 +170,7 @@
 
             <div class="shop-item">
                 <figure>
-                    <img src="images/women/bags/Black Yves Saint Laurent bag.jpg" alt="Black Yves Saint Laurent Bag">
+                    <img src="images/women/bags/Black Yves Saint Laurent bag.jpg" alt="Black Yves Saint Laurent Bag" class="img-fluid">
                 </figure>
                 <h2>Black Yves Saint Laurent Bag</h2>
                     <div class="price">Price: P500</div>
@@ -166,7 +181,7 @@
 
             <div class="shop-item">
                 <figure>
-                    <img src="images/women/bags/Brown Hermes Birkin.jpg" alt="Brown Hermes Birkin Bag">
+                    <img src="images/women/bags/Brown Hermes Birkin.jpg" alt="Brown Hermes Birkin Bag" class="img-fluid">
                 </figure>
                 <h2>Brown Hermes Birkin Bag</h2>
                     <div class="price">Price: P500</div>
@@ -177,7 +192,7 @@
 
             <div class="shop-item">
                 <figure>
-                    <img src="images/women/bags/Cloud Blue Lady Dior.jpg" alt="Cloud Blue Lady Dior Bag">
+                    <img src="images/women/bags/Cloud Blue Lady Dior.jpg" alt="Cloud Blue Lady Dior Bag" class="img-fluid">
                 </figure>
                 <h2>Cloud Blue Lady Dior Bag</h2>
                     <div class="price">Price: P500</div>
@@ -188,7 +203,7 @@
 
             <div class="shop-item">
                 <figure>
-                    <img src="images/women/bags/Cream Blue Lady Dior.jpg" alt="Cream Blue Lady Dior Bag">
+                    <img src="images/women/bags/Cream Blue Lady Dior.jpg" alt="Cream Blue Lady Dior Bag" class="img-fluid ">
                 </figure>
                 <h2>Cream Blue Lady Dior Bag</h2>
                     <div class="price">Price: P500</div>
@@ -199,7 +214,7 @@
 
             <div class="shop-item">
                 <figure>
-                    <img src="images/women/bags/Hot Pink Lady Dior.jpg" alt="Hot Pink Lady Dior Bag">
+                    <img src="images/women/bags/Hot Pink Lady Dior.jpg" alt="Hot Pink Lady Dior Bag" class="img-fluid">
                 </figure>
                 <h2>Hot Pink Lady Dior Bag</h2>
                     <div class="price">Price: P500</div>
@@ -210,7 +225,7 @@
 
             <div class="shop-item">
                 <figure>
-                    <img src="images/women/bags/Light Pink Hermes Birkin.jpg" alt="Light Pink Hermes Birkin Bag">
+                    <img src="images/women/bags/Light Pink Hermes Birkin.jpg" alt="Light Pink Hermes Birkin Bag" class="img-fluid ">
                 </figure>
                 <h2>Light Pink Hermes Birkin Bag</h2>
                     <div class="price">Price: P500</div>
@@ -221,7 +236,7 @@
 
             <div class="shop-item">
                 <figure>
-                    <img src="images/women/bags/White shoulder bag.jpg" alt="White Shoulder Bag">
+                    <img src="images/women/bags/White shoulder bag.jpg" alt="White Shoulder Bag" class="img-fluid">
                 </figure>
                 <h2>White Shoulder Bag</h2>
                     <div class="price">Price: P500</div>
@@ -236,7 +251,7 @@
             
             <div class="shop-item">
                 <figure>
-                    <img src="images/women/shoes/brown loafers.jpg" alt="Brown Loafers">
+                    <img src="images/women/shoes/brown loafers.jpg" alt="Brown Loafers" class="img-fluid">
                 </figure>
                 <h2>Brown Loafers</h2>
                     <div class="price">Price: P500</div>
@@ -247,7 +262,7 @@
 
             <div class="shop-item">
                 <figure>
-                    <img src="images/women/shoes/Brown slingback flats shoes.jpg" alt="Brown Slingback Flats Shoes">
+                    <img src="images/women/shoes/Brown slingback flats shoes.jpg" alt="Brown Slingback Flats Shoes" class="img-fluid">
                 </figure>
                 <h2>Brown Slingback Flats Shoes</h2>
                     <div class="price">Price: P500</div>
@@ -258,7 +273,7 @@
 
             <div class="shop-item">
                 <figure>
-                    <img src="images/women/shoes/Burgurdy Steve Madden slingback stilettos..png" alt="Burgundy Steve Madden Slingback Stilettos">
+                    <img src="images/women/shoes/Burgurdy Steve Madden slingback stilettos..png" alt="Burgundy Steve Madden Slingback Stilettos" class="img-fluid">
                 </figure>
                 <h2>Burgundy Steve Madden Slingback Stilettos</h2>
                     <div class="price">Price: P500</div>
@@ -269,7 +284,7 @@
 
             <div class="shop-item">
                 <figure>
-                    <img src="images/women/shoes/Light Brown Adidas Samba.jpg" alt="Light Brown Adidas Samba Shoes">
+                    <img src="images/women/shoes/Light Brown Adidas Samba.jpg" alt="Light Brown Adidas Samba Shoes" class="img-fluid">
                 </figure>
                 <h2>Light Brown Adidas Samba Shoes</h2>
                     <div class="price">Price: P500</div>
@@ -280,7 +295,7 @@
 
             <div class="shop-item">
                 <figure>
-                    <img src="images/women/shoes/Light Pink Hermès Oran sandals.jpg" alt="Light Pink Hermès Oran Sandals">
+                    <img src="images/women/shoes/Light Pink Hermès Oran sandals.jpg" alt="Light Pink Hermès Oran Sandals" class="img-fluid">
                 </figure>
                 <h2>Light Pink Hermès Oran Sandals</h2>
                     <div class="price">Price: P500</div>
@@ -291,7 +306,7 @@
 
             <div class="shop-item">
                 <figure>
-                    <img src="images/women/shoes/white loafers.jpg" alt="White Loafers">
+                    <img src="images/women/shoes/white loafers.jpg" alt="White Loafers" class="img-fluid">
                 </figure>
                 <h2>White Loafers</h2>
                     <div class="price">Price: P500</div>
@@ -302,7 +317,7 @@
 
             <div class="shop-item">
                 <figure>    
-                    <img src="images/women/shoes/White New Balance sneakers.jpg" alt="White New Balance Sneakers">
+                    <img src="images/women/shoes/White New Balance sneakers.jpg" alt="White New Balance Sneakers" class="img-fluid">
                 </figure>
                 <h2>White New Balance Sneakers</h2>
                     <div class="price">Price: P500</div>
@@ -313,7 +328,7 @@
 
             <div class="shop-item">
                 <figure>
-                    <img src="images/women/shoes/ZARA satin slingback (Burgurdy).jpg" alt="ZARA Satin Slingback (Burgundy)">
+                    <img src="images/women/shoes/ZARA satin slingback (Burgurdy).jpg" alt="ZARA Satin Slingback (Burgundy)" class="img-fluid">
                 </figure>
                 <h2>ZARA Satin Slingback (Burgundy)</h2>
                     <div class="price">Price: P500</div>
@@ -332,5 +347,61 @@
            <span>Gaborone, Botswana</span>
         </div>
     </footer>
+
+    <script>
+let cart = [];
+
+function addToCart(name, price) {
+  const existing = cart.find(item => item.name === name);
+  if (existing) {
+    existing.qty += 1;
+  } else {
+    cart.push({ name, price, qty: 1 });
+  }
+  updateCart();
+}
+
+function removeFromCart(index) {
+  cart.splice(index, 1);
+  updateCart();
+}
+
+function updateCart() {
+  const cartItems = document.getElementById('cart-items');
+  const cartCount = document.getElementById('cart-count');
+  const cartTotal = document.getElementById('cart-total');
+
+  cartCount.textContent = cart.reduce((sum, item) => sum + item.qty, 0);
+
+  if (cart.length === 0) {
+    cartItems.innerHTML = '<p class="empty-cart">Your cart is empty</p>';
+    cartTotal.textContent = '0';
+    return;
+  }
+
+  cartItems.innerHTML = cart.map((item, index) => `
+    <div class="cart-item">
+      <span>${item.name} x${item.qty}</span>
+      <span>P${item.price * item.qty}</span>
+      <button onclick="removeFromCart(${index})">Remove</button>
+    </div>
+  `).join('');
+
+  const total = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+  cartTotal.textContent = total;
+}
+
+function toggleCart() {
+  const dropdown = document.getElementById('cartDropdown');
+  dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+}
+
+document.addEventListener('click', function(e) {
+  const container = document.querySelector('.cart-container');
+  if (!container.contains(e.target)) {
+    document.getElementById('cartDropdown').style.display = 'none';
+  }
+});
+</script>
 </body>
 </html>     
