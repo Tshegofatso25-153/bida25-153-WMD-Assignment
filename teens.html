@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wear-it</title>
+    <title>Teens' Collection</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
             <a class="navbar-brand" href="index.html">FASHIONHUB</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
               <span class="navbar-toggler-icon"></span>
@@ -39,36 +39,131 @@
                         <a class="nav-link" href="Feedbackform.html">Feedback</a>
                     </li>
                 </ul>
+
+        <div class="cart-container">
+                <button class="cart-btn" onclick="toggleCart()">
+                    Cart (<span id="cart-count">0</span>)
+                </button>
+            <div class="cart-dropdown" id="cartDropdown">
+                <h3>Your Cart</h3>
+                <div id="cart-items">
+                    <p class="empty-cart">Your cart is empty</p>
+                </div>
+                <div class="cart-total">
+                    <strong>Total: P<span id="cart-total">0</span></strong>
+                </div>
+                <button class="checkout-btn">Checkout</button>
             </div>
-          </div>
-        </nav>
-        <h1>Teen's Collection</h1>
+        </div>    
+        </div>
+
+            </div>
+        </div>
+    </nav>
+        <h1>Girls's Collection</h1>
     </header>
     <main>
-         <h3>Dresses</h3>
-        <div class="dresses">
-            <figure>
-            <img src="images/baby pink picnic dress.jpg" alt="Baby Pink Picnic Dress">
-            <figcaption>
-                <a href="details/amg-coupe.html">Mercedes Benz AMG COUPE</a>
-            </figcaption>
-            </figure>
-             <figure>
-            <img src="images/butter yellow picnic dress.jpg" alt="Butter Yellow Picnic Dress">
-            <figcaption>
-                <a href="details/amggt.html">Mercedes Benz AMG GT</a>
-                </figcaption>
-            </figure>
-             <figure>
-            <img src="images/mid blue maxi dress.png" alt="Mid Blue Maxi Dress">
-            <figcaption>
-                <a href="details/g63.html">Mercedes Benz G63</a>
-            </figcaption>
-            </figure>
+        <h3>Girls</h3>
+        <div class="teen-girls">
+
+            <div class="shop-item">
+                <figure>
+                    <img src="images/teens/girls/black knitted kowl neck.jpg" alt="Black Knitted cown neck" class="img-fluid">
+                </figure>
+                <h2>Black Knitted Cowl Neck</h2>
+                    <div class="price">Price: P300</div>
+                <button onclick="AddToCart()">
+                    Add to Cart
+                </button>
+            </div>
+
+                <div class="shop-item">
+                    <figure>
+                        <img src="images/teens/girls/blue denim short dress.jpg" alt="Blue Denim Short Dress" class="img-fluid">
+                    </figure>
+                    <h2>Blue Denim Short Dress</h2>
+                        <div class="price">Price: P300</div>
+                    <button onclick="AddToCart()">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="shop-item">
+                    <figure>
+                      <img src="images/teens/girls/brown cargo pants.png" alt="Brown Cargo Pants" class="img-fluid">
+                    </figure>
+                    <h2>Brown Cargo Pants</h2>
+                        <div class="price">Price: P300</div>
+                    <button onclick="AddToCart()">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="shop-item">
+                    <figure>
+                        <img src="images/teens/girls/mid blue maxi dress.png" alt="Mid Blue Maxi Dress" class="img-fluid">
+                    </figure>
+                    <h2>Mid Blue Maxi Dress</h2>
+                        <div class="price">Price: P300</div>
+                    <button onclick="AddToCart()">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="shop-item">
+                    <figure>
+                        <img src="images/teens/girls/short black leather pleated shirt.png" alt="Short Black Leather Pleated Shirt" class="img-fluid">
+                    </figure>
+                    <h2>Short Black Leather Pleated Shirt</h2>
+                            <div class="price">Price: P300</div>
+                    <button onclick="AddToCart()">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="shop-item">
+                    <figure>
+                        <img src="images/teens/girls/short maxi purple dress.jpg" alt="Short Maxi Purple Dress" class="img-fluid">
+                    </figure>
+                    <h2>Short Maxi Purple Dress</h2>
+                        <div class="price">Price: P300</div>
+                    <button onclick="AddToCart()">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="shop-item">
+                    <figure>
+                        <img src="images/teens/girls/short black pleated shirt.png" alt="Short Black Pleated Shirt" class="img-fluid">
+                    </figure>
+                    <h2>Short Black Pleated Shirt</h2>
+                            <div class="price">Price: P300</div>
+                    <button onclick="AddToCart()">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="shop-item">
+                    <figure>
+                        <img src="images/teens/girls/white corset.jpg" alt="White Corset" class="img-fluid">
+                    </figure>
+                    <h2>White Corset</h2>
+                        <div class="price">Price: P300</div>
+                    <button onclick="AddToCart()">
+                        Add to Cart
+                    </button>
+                </div>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <footer class="footer">
+       <div class="footer-bottom">
+           <span class="footer-copy">© 2026 FASHIONHUB. All rights reserved.</span>
+           <span>Gaborone, Botswana</span>
+        </div>
+    </footer>
 
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wear-it</title>
+    <title>Jewellery Collection</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -39,6 +39,23 @@
                         <a class="nav-link" href="Feedbackform.html">Feedback</a>
                     </li>
                 </ul>
+
+        <div class="cart-container">
+                <button class="cart-btn" onclick="toggleCart()">
+                    Cart (<span id="cart-count">0</span>)
+                </button>
+            <div class="cart-dropdown" id="cartDropdown">
+                <h3>Your Cart</h3>
+                <div id="cart-items">
+                    <p class="empty-cart">Your cart is empty</p>
+                </div>
+                <div class="cart-total">
+                    <strong>Total: P<span id="cart-total">0</span></strong>
+                </div>
+                <button class="checkout-btn">Checkout</button>
+            </div>
+        </div>    
+        </div>        
             </div>
           </div>
         </nav>
@@ -53,7 +70,9 @@
                 <figure>
                     <img src="images/jewellery/Dior bracelets.jpg" alt="Dior Bracelets" class="img-fluid">
                 </figure>
-                <button class="AddToCart">
+                <h2>Dior braceltes</h2>
+                    <div class="price">Price: P1500</div>
+                <button onclick="AddToCart('Dior Bracelets', 1500)">
                     Add to Cart
                 </button>
             </div>
@@ -62,7 +81,9 @@
                 <figure>
                     <img src="images/jewellery/flower earings.jpg" alt="Flower Earings" class="img-fluid">
                 </figure>
-                <button class="AddToCart">
+                <h2>Flower earings</h2>
+                    <div class="price">Price: P100</div>
+                <button onclick="AddToCart('Flower earings', 100)">
                     Add to Cart
                 </button>
             </div>
@@ -71,16 +92,31 @@
                 <figure>
                     <img src="images/jewellery/gold banglet.jpg" alt="Gold Banglet" class="img-fluid">
                 </figure>
-                <button class="AddToCart">
-                    Add to Cart
-                </button>
+                    <h2>Arabic Gold Banglet</h2>
+                        <div class="price">Price: P2000</div>
+                    <button onclick="AddToCart('Arabic Gold Banglet', 2000)">
+                        Add to Cart
+                    </button>
             </div>
 
             <div class="shop-item">
                 <figure>
                     <img src="images/jewellery/gold, diamond necklace.jpg" alt="Gold and Diamond Necklace" class="img-fluid">
                 </figure>
-                <button class="AddToCart">
+                <h2>Gold and Diamond Necklace</h2>
+                    <div class="price">Price: P5000</div>
+                <button onclick="AddToCart('Gold and Diamond Necklace', 5000)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="shop-item">
+                <figure>
+                    <img src="images/jewellery/gold bulgaria women watch.jpg" alt="Gold Bulgaria Women Watch" class="img-fluid">
+                </figure>
+                <h2>Gold Bulgaria Women Watch</h2>
+                    <div class="price">Price: P3000</div>
+                <button onclick="AddToCart('Gold Bulgaria Women Watch', 3000)">
                     Add to Cart
                 </button>
             </div>
@@ -89,7 +125,9 @@
                 <figure>
                     <img src="images/jewellery/gold necklace and earing combo.jpg" alt="Gold necklace and earing" class="img-fluid">
                 </figure>
-                <button class="AddToCart">
+                <h2>Gold Necklace and Earing Combo</h2>
+                    <div class="price">Price: P250</div>
+                <button onclick="AddToCart('Gold Necklace and Earing Combo', 250)">
                     Add to Cart
                 </button>
             </div>
@@ -98,7 +136,9 @@
                 <figure>
                     <img src="images/jewellery/gold 3 piece.jpg" alt="Gold 3 piece" class="img-fluid">
                 </figure>
-                <button class="AddToCart">
+                <h2>Gold 3 Piece Set</h2>
+                    <div class="price">Price: P600</div>
+                <button onclick="AddToCart('Gold 3 Piece Set', 600)">
                     Add to Cart
                 </button>
             </div>
@@ -107,7 +147,9 @@
                 <figure>
                     <img src="images/jewellery/gold ring.jpg" alt="Gold Ring" class="img-fluid">
                 </figure>
-                <button class="AddToCart">
+                    <h2>Gold Ring</h2>
+                        <div class="price">Price: P350</div>
+                <button onclick="AddToCart('Gold Ring', 350)">
                     Add to Cart
                 </button>
             </div>
@@ -116,7 +158,9 @@
                 <figure>
                     <img src="images/jewellery/flower gold ring.jpg" alt="Flower Gold Ring" class="img-fluid">
                 </figure>
-                <button class="AddToCart">
+                <h2>Flower Gold Ring</h2>
+                    <div class="price">Price: P450</div>
+                <button onclick="AddToCart('Flower Gold Ring', 450)">
                     Add to Cart
                 </button>
             </div>
@@ -130,7 +174,9 @@
                 <figure>
                     <img src="images/jewellery/silver Cartier necklace.jpg" alt="Silver Cartier Necklace" class="img-fluid">
                 </figure>
-                <button class="AddToCart">
+                <h2>Silver Cartier Necklace</h2>
+                <div class="price">Price: P2000</div>
+                <button onclick="AddToCart('Silver Cartier Necklace', 2000)">
                     Add to Cart
                 </button>
             </div>
@@ -139,7 +185,20 @@
                 <figure>
                     <img src="images/jewellery/silver diamond necklace.jpg" alt="Silver Diamond Necklace" class="img-fluid">
                 </figure>
-                <button class="AddToCart">
+                <h2>Silver Diamond Necklace</h2>
+                    <div class="price">Price: P5000</div>
+                 <button onclick="AddToCart('Silver Diamond Necklace', 5000)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="shop-item">
+                <figure>
+                    <img src="images/jewellery/rose gold rolex watch.jpg" alt="Rose Gold Rolex Watch" class="img-fluid">
+                </figure>
+                <h2>Rose Gold Rolex Watch</h2>
+                <div class="price">Price: P5000</div>
+                <button onclick="AddToCart('Rose Gold Rolex Watch', 5000)">
                     Add to Cart
                 </button>
             </div>
@@ -148,6 +207,10 @@
                 <figure>
                     <img src="images/jewellery/silver dior bracelets.jpg" alt="Silver Dior Bracelets" class="img-fluid">
                 </figure>
+                <h2>Silver Dior Bracelets</h2>
+                    <div class="price">Price: P1500</div>
+                 <button onclick="AddToCart('Silver Dior Bracelets', 1500)">
+                    Add to Cart
                 <button class="AddToCart">
                     Add to Cart
                 </button>
@@ -157,7 +220,9 @@
                 <figure>
                     <img src="images/jewellery/Dior diamond bracelet.jpg" alt="Dior Diamond Bracelet" class="img-fluid">
                 </figure>
-                <button class="AddToCart">
+                <h2>Dior Diamond Bracelet</h2>
+                <div class="price">Price: P300</div>
+                <button onclick="AddToCart('Dior Diamond Bracelet', 300)">
                     Add to Cart
                 </button>
             </div>
@@ -166,7 +231,9 @@
                 <figure>
                     <img src="images/jewellery/silver waterdroplet earings.jpg" alt="Silver Waterdroplet Earings" class="img-fluid">
                 </figure>
-                <button class="AddToCart">
+                <h2>Silver Waterdroplet Earings</h2>
+                    <div class="price">Price: P80</div>
+                 <button onclick="AddToCart('Silver Waterdroplet Earings', 80)">
                     Add to Cart
                 </button>
             </div>
@@ -175,7 +242,9 @@
                 <figure>
                      <img src="images/jewellery/silver half flower.jpg" alt="Silver Half Flower" class="img-fluid">    
                 </figure>
-                <button class="AddToCart">
+                <h2>Silver Half Flower</h2>
+                    <div class="price">Price: P150</div>
+                 <button onclick="AddToCart('Silver Half Flower', 150)">
                     Add to Cart
                 </button>
             </div>
@@ -184,7 +253,9 @@
                 <figure>
                     <img src="images/jewellery/silver flower.jpg" alt="Silver Flower" class="img-fluid">    
                 </figure>
-                <button class="AddToCart">
+                <h2>Silver Flower</h2>
+                <div class="price">Price: P100</div>
+                <button onclick="AddToCart('Silver Flower', 100)">
                     Add to Cart
                 </button>
             </div>
@@ -193,6 +264,7 @@
                 <figure>
                     <img src="images/jewellery/diamond flower.jpg" alt="Diamond Flower earing" class="img-fluid">
                 </figure>
+                <h2>Diamond Flower Earing</h2>
                 <button class="AddToCart">
                     Add to Cart
                 </button>
@@ -224,6 +296,15 @@
 
             <div class="shop-item">
                 <figure>
+                    <img src="images/jewellery/black casio watch.jpg" alt="Black Casio Watch" class="img-fluid">
+                </figure>
+                <button onclick="AddToCart()">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="shop-item">
+                <figure>
                     <img src="images/jewellery/van cleef necklage, gold.jpg" alt="Van Cleef gold Necklace" class="img-fluid">
                 </figure>
                 <button class="AddToCart">
@@ -234,6 +315,17 @@
             <div class="shop-item">
                 <figure>
                     <img src="images/jewellery/jade flower.jpg" alt="Jade Flower" class="img-fluid">
+                </figure>
+                <h2>Jade Flower</h2>
+                    <div class="price">Price: P70</div>
+                <button onclick="AddToCart('Jade Flower', 70)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="shop-item">
+                <figure>
+                    <img src="images/jewellery/blue mclaren richard mille watch.jpg" alt="Blue Mclaren Richard Mille Watch" class="img-fluid">
                 </figure>
                 <button class="AddToCart">
                     Add to Cart
@@ -248,10 +340,26 @@
                     Add to Cart
                 </button>
             </div>
+
+            <div class="shop-item">
+                <figure>
+                    <img src="images/jewellery/green male rolex.jpg" alt="Green Male Rolex Watch" class="img-fluid">
+                </figure>
+                <button class="AddToCart">
+                    Add to Cart
+                </button>
+            </div>
         </div>    
     </main>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <footer class="footer">
+       <div class="footer-bottom">
+           <span class="footer-copy">© 2026 FASHIONHUB. All rights reserved.</span>
+           <span>Gaborone, Botswana</span>
+        </div>
+    </footer>
 
 </body>
 </html>
