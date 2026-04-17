@@ -10,7 +10,7 @@
 <body>
    <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container">
+        <div class="container">
             <a class="navbar-brand" href="index.html">FASHIONHUB</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
               <span class="navbar-toggler-icon"></span>
@@ -41,23 +41,23 @@
                 </ul>
 
         <div class="cart-container">
-                <button class="cart-btn" onclick="toggleCart()">
-                    Cart (<span id="cart-count">0</span>)
-                </button>
+            <button class="cart-btn" onclick="toggleCart()">
+                Cart (<span id="cart-count">0</span>)
+            </button>
             <div class="cart-dropdown" id="cartDropdown">
                 <h3>Your Cart</h3>
-                <div id="cart-items">
-                    <p class="empty-cart">Your cart is empty</p>
-                </div>
-                <div class="cart-total">
-                    <strong>Total: P<span id="cart-total">0</span></strong>
-                </div>
-                <button class="checkout-btn">Checkout</button>
+                <div id="cart-items">  
             </div>
-        </div>    
-        </div>        
+            <div class="cart-total">
+                <strong>Total: P<span id="cart-total">0</span></strong>
             </div>
-          </div>
+            <div class="cart-buttons">
+                <button class="reset-btn" onclick="resetCart()">Reset Cart</button>
+                <button class="checkout-btn" onclick="onCheckout()">Checkout</button>
+            </div>
+        </div>
+            </div>        
+        </div>
         </nav>
 
         <h1>Kid's Collection</h1>
@@ -72,8 +72,8 @@
                     <img src="images/kids/girls/match set skirt and top.jpg" alt="Grey Skirt and Top" class="img-fluid">
                 </figure>
                 <h2>Grey Skirt and Top</h2>
-                    <div class="price">Price: P300</div>
-                <button class="AddToCart">
+                    <div class="price">Price: P280</div>
+                <button onclick="addToCart( 'Grey Skirt and Top', 280)">
                     Add to Cart
                 </button>
             </div>
@@ -83,8 +83,8 @@
                     <img src="images/kids/girls/pink and white pyjamas.jpg" alt="Pink and White Pyjamas" class="img-fluid">
                 </figure>
                 <h2>Pink and White Pyjamas</h2>
-                <div class="price">Price: P300</div>
-                <button class="AddToCart">
+                <div class="price">Price: P200</div>
+                <button onclick="addToCart( 'Pink and White Pyjamas', 200)">
                     Add to Cart
                 </button>
             </div>
@@ -94,8 +94,8 @@
                     <img src="images/kids/girls/pink hello kitty pyjama.webp" alt="Pink Hello Kitty Pyjama" class="img-fluid">
                 </figure>
                 <h2>Pink Hello Kitty Pyjama</h2>
-                    <div class="price">Price: P300</div>
-                <button class="AddToCart">
+                    <div class="price">Price: P220</div>
+                <button onclick="addToCart( 'Pink Hello Kitty Pyjama', 220)">
                     Add to Cart
                 </button>
             </div>
@@ -105,9 +105,9 @@
                     <img src="images/kids/girls/pink plited dress.jpg" alt="Pink Pleated Dress" class="img-fluid">
                 </figure>
                 <h2>Pink Pleated Dress</h2>
-                    <div class="price">Price: P300</div>
-                <button class="AddToCart">
-                    Add to Cart 
+                    <div class="price">Price: P250</div>
+                <button onclick="addToCart( 'Pink Pleated Dress', 250)">
+                    Add to Cart
                 </button>
             </div>
 
@@ -116,8 +116,8 @@
                     <img src="images/kids/girls/purple off-shoulder pleated dress.jpg" alt="Purple Off-Shoulder Pleated Dress" class="img-fluid">
                 </figure>
                 <h2>Purple Off-Shoulder Pleated Dress</h2>
-                    <div class="price">Price: P300</div>
-                <button class="AddToCart">
+                    <div class="price">Price: P250</div>
+                <button onclick="addToCart( 'Purple Off-Shoulder Pleated Dress', 250)">
                     Add to Cart
                 </button>
             </div>
@@ -128,7 +128,7 @@
                 </figure>
                 <h2>White and Red Dress</h2>
                     <div class="price">Price: P120</div>
-                <button onclick="AddToCart('White and Red Dress', 120)">
+                <button onclick="addToCart('White and Red Dress', 120)">
                     Add to Cart
                 </button>
             </div>
@@ -138,8 +138,8 @@
                     <img src="images/kids/girls/yellow 2 piece.jpg" alt="Yellow 2 Piece" class="img-fluid ">
                 </figure>
                 <h2>Yellow 2 Piece</h2>
-                    <div class="price">Price: P300</div>
-                <button class="AddToCart">
+                    <div class="price">Price: P220</div>
+                <button onclick="addToCart( 'Yellow 2 Piece', 220)">
                     Add to Cart
                 </button>
             </div>
@@ -148,9 +148,9 @@
                 <figure>
                     <img src="images/kids/girls/pyjams.jpg" alt="Cream white Pyjamas" class="img-fluid">
                 </figure>
-                <h2>Cream white Pyjamas</h2>
-                    <div class="price">Price: P300</div>
-                <button class="AddToCart">
+                <h2>Cream white Brown Bear Pyjamas</h2>
+                    <div class="price">Price: P210</div>
+                <button onclick="addToCart( 'Cream white Brown Bear Pyjamas', 210)">
                     Add to Cart
                 </button>
             </div>
@@ -164,19 +164,19 @@
                     <img src="images/kids/boys/blue tom and jerry shirt.jpg" alt="Blue Tom and Jerry Shirt" class="img-fluid">
                 </figure>
                 <h2>Blue Tom and Jerry Shirt</h2>
-                    <div class="price">Price: P300</div>
-                <button class="AddToCart">
+                    <div class="price">Price: P180</div>
+                <button onclick="addToCart( 'Blue Tom and Jerry Shirt', 180)">
                     Add to Cart
                 </button>
             </div>
 
             <div class="shop-item">
                 <figure>
-                    <img src="images/kids/boys/brown and white polo zip up shiet.jpg" alt="Brown and White Polo Zip Up Shirt" class="img-fluid">
+                    <img src="images/kids/boys/brown and white polo zip up shiet.jpg" alt="Brown and White  Zip Up Shirt" class="img-fluid">
                 </figure>
-                <h2>Brown and White Polo Zip Up Shirt</h2>
-                    <div class="price">Price: P300</div>
-                <button class="AddToCart">
+                <h2>Brown and White Zip Up Shirt</h2>
+                    <div class="price">Price: P150</div>
+                <button onclick="addToCart( 'Brown and White Zip Up Shirt', 150)">
                     Add to Cart
                 </button>
             </div>
@@ -186,8 +186,8 @@
                     <img src="images/kids/boys/grey shirt.jpg" alt="Grey Shirt" class="img-fluid">
                 </figure>
                 <h2>Grey Shirt</h2>
-                    <div class="price">Price: P300</div>
-                <button class="AddToCart">
+                    <div class="price">Price: P200</div>
+                <button onclick="addToCart( 'Grey Shirt', 200)">
                     Add to Cart
                 </button>
             </div>
@@ -197,8 +197,8 @@
                     <img src="images/kids/boys/military green cargo pants.jpg" alt="Military Green Cargo Pants" class="img-fluid">
                 </figure>
                 <h2>Military Green Cargo Pants</h2>
-                    <div class="price">Price: P300</div>
-                <button class="AddToCart">
+                    <div class="price">Price: P180</div>
+                <button onclick="addToCart( 'Military Green Cargo Pants', 280)">
                     Add to Cart
                 </button>
             </div>
@@ -208,8 +208,8 @@
                     <img src="images/kids/boys/paw patrol pyjamas.jpg" alt="Paw Patrol Pyjamas" class="img-fluid">
                 </figure>
                 <h2>Paw Patrol Pyjamas</h2>
-                    <div class="price">Price: P300</div>
-                <button class="AddToCart">
+                    <div class="price">Price: P120</div>
+                <button onclick="addToCart( 'Paw Patrol Pyjamas', 120)">
                     Add to Cart
                 </button>
             </div>
@@ -219,8 +219,8 @@
                     <img src="images/kids/boys/short brown pants.jpg" alt="Short Brown Pants" class="img-fluid" >
                 </figure>
                 <h2>Short Brown Pants</h2>
-                    <div class="price">Price: P300</div>
-                <button class="AddToCart">
+                    <div class="price">Price: P110</div>
+                <button onclick="addToCart( 'Short Brown Pants', 110)">
                     Add to Cart
                 </button>
             </div>
@@ -230,8 +230,8 @@
                     <img src="images/kids/boys/soniv the hedgehog blue pyjamas.jpg" alt="Sonic the Hedgehog Blue Pyjamas" class="img-fluid">
                 </figure>
                 <h2>Sonic the Hedgehog Blue Pyjamas</h2>
-                    <div class="price">Price: P300</div>
-                <button class="AddToCart">
+                    <div class="price">Price: P150</div>
+                <button onclick="addToCart( 'Sonic the Hedgehog Blue Pyjamas', 150)">
                     Add to Cart
                 </button>
             </div>
@@ -241,8 +241,8 @@
                     <img src="images/kids/boys/white sleeve shiet.jpg" alt="White Sleeve Shirt" class="img-fluid">
                 </figure>
                 <h2>White Sleeve Shirt</h2>
-                    <div class="price">Price: P300</div>
-                <button class="AddToCart">
+                    <div class="price">Price: P80</div>
+                <button onclick="addToCart( 'White Sleeve Shirt', 80)">
                     Add to Cart
                 </button>
             </div>
@@ -257,6 +257,84 @@
            <span>Gaborone, Botswana</span>
         </div>
     </footer>
+
+         <script>
+let cart = [];
+
+function addToCart(name, price) {
+  const existing = cart.find(item => item.name === name);
+  if (existing) {
+    existing.qty += 1;
+  } else {
+    cart.push({ name, price, qty: 1 });
+  }
+  updateCart();
+}
+
+function changeQty(index, delta) {
+  cart[index].qty += delta;
+  if (cart[index].qty <= 0) {
+    cart.splice(index, 1);
+  }
+  updateCart();
+}
+
+function resetCart() {
+  cart = [];
+  updateCart();
+}
+
+function onCheckout() {
+  if (cart.length === 0) {
+    alert('Your cart is empty.');
+    return;
+  }
+  window.location.href = 'checkout.html';
+}
+
+function updateCart() {
+  const cartItems = document.getElementById('cart-items');
+  const cartCount = document.getElementById('cart-count');
+  const cartTotal = document.getElementById('cart-total');
+
+  cartCount.textContent = cart.reduce((sum, item) => sum + item.qty, 0);
+
+  if (cart.length === 0) {
+    cartItems.innerHTML = '<p class="empty-cart">Your cart is empty</p>';
+    cartTotal.textContent = '0';
+    return;
+  }
+
+  cartItems.innerHTML = cart.map((item, index) => `
+    <div class="cart-item">
+      <div class="cart-item-info">
+        <span class="cart-item-name">${item.name}</span>
+        <span class="cart-item-price">P${(item.price * item.qty).toLocaleString()}</span>
+      </div>
+      <div class="cart-item-controls">
+        <button class="qty-btn" onclick="changeQty(${index}, -1)">−</button>
+        <span class="cart-item-qty">${item.qty}</span>
+        <button class="qty-btn" onclick="changeQty(${index}, 1)">+</button>
+      </div>
+    </div>
+  `).join('');
+
+  const total = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+  cartTotal.textContent = total.toLocaleString();
+}
+
+function toggleCart() {
+  const dropdown = document.getElementById('cartDropdown');
+  dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+}
+
+document.addEventListener('click', function(e) {
+  const container = document.querySelector('.cart-container');
+  if (!container.contains(e.target)) {
+    document.getElementById('cartDropdown').style.display = 'none';
+  }
+});
+</script>
 
 </body>
 </html>

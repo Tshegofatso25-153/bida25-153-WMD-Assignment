@@ -41,23 +41,23 @@
                 </ul>
 
         <div class="cart-container">
-                <button class="cart-btn" onclick="toggleCart()">
-                    Cart (<span id="cart-count">0</span>)
-                </button>
+            <button class="cart-btn" onclick="toggleCart()">
+                Cart (<span id="cart-count">0</span>)
+            </button>
             <div class="cart-dropdown" id="cartDropdown">
                 <h3>Your Cart</h3>
-                <div id="cart-items">
-                    <p class="empty-cart">Your cart is empty</p>
-                </div>
-                <div class="cart-total">
-                    <strong>Total: P<span id="cart-total">0</span></strong>
-                </div>
-                <button class="checkout-btn">Checkout</button>
+                <div id="cart-items">  
             </div>
-        </div>    
-        </div>        
+            <div class="cart-total">
+                <strong>Total: P<span id="cart-total">0</span></strong>
             </div>
-          </div>
+            <div class="cart-buttons">
+                <button class="reset-btn" onclick="resetCart()">Reset Cart</button>
+                <button class="checkout-btn" onclick="onCheckout()">Checkout</button>
+            </div>
+        </div>
+            </div>        
+        </div>
         </nav>
 
         <h1>Jewellery Collection</h1>
@@ -72,7 +72,7 @@
                 </figure>
                 <h2>Dior braceltes</h2>
                     <div class="price">Price: P1500</div>
-                <button onclick="AddToCart('Dior Bracelets', 1500)">
+                <button onclick="addToCart( 'Dior Bracelets', 1500)">
                     Add to Cart
                 </button>
             </div>
@@ -83,7 +83,7 @@
                 </figure>
                 <h2>Flower earings</h2>
                     <div class="price">Price: P100</div>
-                <button onclick="AddToCart('Flower earings', 100)">
+                <button onclick="addToCart( 'Flower earings', 100)">
                     Add to Cart
                 </button>
             </div>
@@ -94,7 +94,7 @@
                 </figure>
                     <h2>Arabic Gold Banglet</h2>
                         <div class="price">Price: P2000</div>
-                    <button onclick="AddToCart('Arabic Gold Banglet', 2000)">
+                    <button onclick="addToCart( 'Arabic Gold Banglet', 2000)">
                         Add to Cart
                     </button>
             </div>
@@ -105,7 +105,7 @@
                 </figure>
                 <h2>Gold and Diamond Necklace</h2>
                     <div class="price">Price: P5000</div>
-                <button onclick="AddToCart('Gold and Diamond Necklace', 5000)">
+                <button onclick="addToCart( 'Gold and Diamond Necklace', 5000)">
                     Add to Cart
                 </button>
             </div>
@@ -116,7 +116,7 @@
                 </figure>
                 <h2>Gold Bulgaria Women Watch</h2>
                     <div class="price">Price: P3000</div>
-                <button onclick="AddToCart('Gold Bulgaria Women Watch', 3000)">
+                <button onclick="addToCart( 'Gold Bulgaria Women Watch', 3000)">
                     Add to Cart
                 </button>
             </div>
@@ -127,7 +127,7 @@
                 </figure>
                 <h2>Gold Necklace and Earing Combo</h2>
                     <div class="price">Price: P250</div>
-                <button onclick="AddToCart('Gold Necklace and Earing Combo', 250)">
+                <button onclick="addToCart( 'Gold Necklace and Earing Combo', 250)">
                     Add to Cart
                 </button>
             </div>
@@ -138,7 +138,7 @@
                 </figure>
                 <h2>Gold 3 Piece Set</h2>
                     <div class="price">Price: P600</div>
-                <button onclick="AddToCart('Gold 3 Piece Set', 600)">
+                <button onclick="addToCart( 'Gold 3 Piece Set', 600)">
                     Add to Cart
                 </button>
             </div>
@@ -149,7 +149,7 @@
                 </figure>
                     <h2>Gold Ring</h2>
                         <div class="price">Price: P350</div>
-                <button onclick="AddToCart('Gold Ring', 350)">
+                <button onclick="addToCart( 'Gold Ring', 350)">
                     Add to Cart
                 </button>
             </div>
@@ -160,7 +160,7 @@
                 </figure>
                 <h2>Flower Gold Ring</h2>
                     <div class="price">Price: P450</div>
-                <button onclick="AddToCart('Flower Gold Ring', 450)">
+                <button onclick="addToCart( 'Flower Gold Ring', 450)">
                     Add to Cart
                 </button>
             </div>
@@ -176,7 +176,7 @@
                 </figure>
                 <h2>Silver Cartier Necklace</h2>
                 <div class="price">Price: P2000</div>
-                <button onclick="AddToCart('Silver Cartier Necklace', 2000)">
+                <button onclick="addToCart( 'Silver Cartier Necklace', 2000)">
                     Add to Cart
                 </button>
             </div>
@@ -187,7 +187,7 @@
                 </figure>
                 <h2>Silver Diamond Necklace</h2>
                     <div class="price">Price: P5000</div>
-                 <button onclick="AddToCart('Silver Diamond Necklace', 5000)">
+                 <button onclick="addToCart( 'Silver Diamond Necklace', 5000)">
                     Add to Cart
                 </button>
             </div>
@@ -198,7 +198,7 @@
                 </figure>
                 <h2>Rose Gold Rolex Watch</h2>
                 <div class="price">Price: P5000</div>
-                <button onclick="AddToCart('Rose Gold Rolex Watch', 5000)">
+                <button onclick="addToCart( 'Rose Gold Rolex Watch', 5000)">
                     Add to Cart
                 </button>
             </div>
@@ -209,9 +209,7 @@
                 </figure>
                 <h2>Silver Dior Bracelets</h2>
                     <div class="price">Price: P1500</div>
-                 <button onclick="AddToCart('Silver Dior Bracelets', 1500)">
-                    Add to Cart
-                <button class="AddToCart">
+                 <button onclick="addToCart( 'Silver Dior Bracelets', 1500)">
                     Add to Cart
                 </button>
             </div>
@@ -222,7 +220,7 @@
                 </figure>
                 <h2>Dior Diamond Bracelet</h2>
                 <div class="price">Price: P300</div>
-                <button onclick="AddToCart('Dior Diamond Bracelet', 300)">
+                <button onclick="addToCart( 'Dior Diamond Bracelet', 300)">
                     Add to Cart
                 </button>
             </div>
@@ -233,7 +231,7 @@
                 </figure>
                 <h2>Silver Waterdroplet Earings</h2>
                     <div class="price">Price: P80</div>
-                 <button onclick="AddToCart('Silver Waterdroplet Earings', 80)">
+                 <button onclick="addToCart( 'Silver Waterdroplet Earings', 80)">
                     Add to Cart
                 </button>
             </div>
@@ -244,7 +242,7 @@
                 </figure>
                 <h2>Silver Half Flower</h2>
                     <div class="price">Price: P150</div>
-                 <button onclick="AddToCart('Silver Half Flower', 150)">
+                 <button onclick="addToCart( 'Silver Half Flower', 150)">
                     Add to Cart
                 </button>
             </div>
@@ -255,7 +253,7 @@
                 </figure>
                 <h2>Silver Flower</h2>
                 <div class="price">Price: P100</div>
-                <button onclick="AddToCart('Silver Flower', 100)">
+                <button onclick="addToCart( 'Silver Flower', 100)">
                     Add to Cart
                 </button>
             </div>
@@ -298,7 +296,7 @@
                 <figure>
                     <img src="images/jewellery/black casio watch.jpg" alt="Black Casio Watch" class="img-fluid">
                 </figure>
-                <button onclick="AddToCart()">
+                <button onclick="addToCart( 'Black Casio Watch', 150)">
                     Add to Cart
                 </button>
             </div>
@@ -318,7 +316,7 @@
                 </figure>
                 <h2>Jade Flower</h2>
                     <div class="price">Price: P70</div>
-                <button onclick="AddToCart('Jade Flower', 70)">
+                <button onclick="addToCart('Jade Flower', 70)">
                     Add to Cart
                 </button>
             </div>
@@ -343,9 +341,11 @@
 
             <div class="shop-item">
                 <figure>
-                    <img src="images/jewellery/green male rolex.jpg" alt="Green Male Rolex Watch" class="img-fluid">
+                    <img src="images/jewellery/green male rolex.jpg" alt="Green Rolex Daytona Watch" class="img-fluid">
                 </figure>
-                <button class="AddToCart">
+                <h2>Green Rolex Daytona Watch</h2>
+                    <div class="price">Price: P8000</div>
+                <button onclick="addToCart( 'Green Rolex Daytona Watch', 8000)">
                     Add to Cart
                 </button>
             </div>
@@ -360,6 +360,84 @@
            <span>Gaborone, Botswana</span>
         </div>
     </footer>
+
+         <script>
+let cart = [];
+
+function addToCart(name, price) {
+  const existing = cart.find(item => item.name === name);
+  if (existing) {
+    existing.qty += 1;
+  } else {
+    cart.push({ name, price, qty: 1 });
+  }
+  updateCart();
+}
+
+function changeQty(index, delta) {
+  cart[index].qty += delta;
+  if (cart[index].qty <= 0) {
+    cart.splice(index, 1);
+  }
+  updateCart();
+}
+
+function resetCart() {
+  cart = [];
+  updateCart();
+}
+
+function onCheckout() {
+  if (cart.length === 0) {
+    alert('Your cart is empty.');
+    return;
+  }
+  window.location.href = 'checkout.html';
+}
+
+function updateCart() {
+  const cartItems = document.getElementById('cart-items');
+  const cartCount = document.getElementById('cart-count');
+  const cartTotal = document.getElementById('cart-total');
+
+  cartCount.textContent = cart.reduce((sum, item) => sum + item.qty, 0);
+
+  if (cart.length === 0) {
+    cartItems.innerHTML = '<p class="empty-cart">Your cart is empty</p>';
+    cartTotal.textContent = '0';
+    return;
+  }
+
+  cartItems.innerHTML = cart.map((item, index) => `
+    <div class="cart-item">
+      <div class="cart-item-info">
+        <span class="cart-item-name">${item.name}</span>
+        <span class="cart-item-price">P${(item.price * item.qty).toLocaleString()}</span>
+      </div>
+      <div class="cart-item-controls">
+        <button class="qty-btn" onclick="changeQty(${index}, -1)">−</button>
+        <span class="cart-item-qty">${item.qty}</span>
+        <button class="qty-btn" onclick="changeQty(${index}, 1)">+</button>
+      </div>
+    </div>
+  `).join('');
+
+  const total = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+  cartTotal.textContent = total.toLocaleString();
+}
+
+function toggleCart() {
+  const dropdown = document.getElementById('cartDropdown');
+  dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+}
+
+document.addEventListener('click', function(e) {
+  const container = document.querySelector('.cart-container');
+  if (!container.contains(e.target)) {
+    document.getElementById('cartDropdown').style.display = 'none';
+  }
+});
+</script>
 
 </body>
 </html>
