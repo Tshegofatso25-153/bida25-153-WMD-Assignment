@@ -71,26 +71,27 @@
         </div>
 
     </header>
-    <main class="container my-5">
-      <div class="row">
-        <div class="col-md-8">
+    <main class="main-container">
+      <div class="header-content-left">
+        <div class="main-container-text">
           <p>Welcome to Wear-it! We offer a wide range of clothing and accessories for all ages,genders and styles. </p>
           <p>Whether you're looking for trendy outfits, classic pieces, or unique accessories, we have something in-store for everyone!</p>
           <p>Explore our collections for Women, Men, Teens, and Kids and jewellery!</p>
         </div>
       </div>
-    
+    </main>
 
-  <h2>Featured Products</h2>
+     <h2 class="featured-heading">Featured Products</h2>
   <div class="featured-grid">
+     
 
     <div class="shop-item">
       <figure>
         <img src="images/women/bags/Babay Blue Hermes Birkin.jpg" alt="Baby Blue Hermes Birkin Bag" class="img-fluid">
       </figure>
       <h2>Baby Blue Hermes Birkin Bag</h2>
-        <div class="price">Price: P1500</div>
-      <button onclick="addToCart('Baby Blue Hermes Birkin Bag', 1500)">
+        <div class="price">Price: P6000</div>
+      <button onclick="addToCart('Baby Blue Hermes Birkin Bag', 6000)">
         Add to Cart
       </button>
     </div>
@@ -127,7 +128,6 @@
         Add to Cart
       </button>
     </div>
-    </main>
   </div>
    
   <footer class="footer">
@@ -206,7 +206,7 @@ function onCheckout() {
     alert('Your cart is empty.');
     return;
   }
-  window.location.href = 'checkout.html';
+  window.location.href = 'checkout-message.html';
 }
 
 function updateCart() {
@@ -255,8 +255,3 @@ document.addEventListener('click', function(e) {
 
 </body>
 </html>
-
-
-
-
-

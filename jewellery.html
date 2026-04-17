@@ -252,7 +252,7 @@
                     <img src="images/jewellery/silver flower.jpg" alt="Silver Flower" class="img-fluid">    
                 </figure>
                 <h2>Silver Flower</h2>
-                <div class="price">Price: P100</div>
+                    <div class="price">Price: P100</div>
                 <button onclick="addToCart( 'Silver Flower', 100)">
                     Add to Cart
                 </button>
@@ -260,10 +260,11 @@
 
             <div class="shop-item">
                 <figure>
-                    <img src="images/jewellery/diamond flower.jpg" alt="Diamond Flower earing" class="img-fluid">
+                    <img src="images/jewellery/diamond flower.jpg" alt="Diamond Flower earings" class="img-fluid">
                 </figure>
-                <h2>Diamond Flower Earing</h2>
-                <button class="AddToCart">
+                <h2>Diamond Flower Earings</h2>
+                    <div class="price">Price: P150</div>
+                <button onclick="addToCart( 'Diamond Flower Earing', 150 )">
                     Add to Cart
                 </button>
             </div>
@@ -278,16 +279,18 @@
                 </figure>
                 <h2>Pink and Van Cleef Set</h2>
                     <div class="price">Price: P500</div>
-                <button class="AddToCart">
+                <button onclick="addToCart( 'Pink and Van Cleef Set', 500)">
                     Add to Cart
                 </button>
             </div>
             
             <div class="shop-item">
                 <figure>
-                    <img src="images/jewellery/3banglets.jpg" alt="3 Banglets" class="img-fluid">
+                    <img src="images/jewellery/3banglets.jpg" alt="3 Arabic Banglets" class="img-fluid">
                 </figure>
-                <button class="AddToCart">
+                <h2>3 Arabic Banglets</h2>
+                    <div class="price">Price: P6000</div>
+                <button onclick="addToCart( '3 Arabic Banglets', 6000)">
                     Add to Cart
                 </button>
             </div>
@@ -296,16 +299,20 @@
                 <figure>
                     <img src="images/jewellery/black casio watch.jpg" alt="Black Casio Watch" class="img-fluid">
                 </figure>
-                <button onclick="addToCart( 'Black Casio Watch', 150)">
+                <h2>Black Casio Watch</h2>
+                    <div class="price">Price: P200</div>
+                <button onclick="addToCart( 'Black Casio Watch', 200)">
                     Add to Cart
                 </button>
             </div>
 
             <div class="shop-item">
                 <figure>
-                    <img src="images/jewellery/van cleef necklage, gold.jpg" alt="Van Cleef gold Necklace" class="img-fluid">
+                    <img src="images/jewellery/van cleef necklage, gold.jpg" alt="Black and Gold Van Cleef Necklace" class="img-fluid">
                 </figure>
-                <button class="AddToCart">
+                <h2>Black and Gold Van Cleef</h2>
+                    <div class="price">Price: P350</div>
+                <button onclick="addToCart( 'Black and Gold Van Cleef', 350)">
                     Add to Cart
                 </button>
             </div>
@@ -325,7 +332,9 @@
                 <figure>
                     <img src="images/jewellery/blue mclaren richard mille watch.jpg" alt="Blue Mclaren Richard Mille Watch" class="img-fluid">
                 </figure>
-                <button class="AddToCart">
+                <h2>Blue Mclaren Richard Mille Watch</h2>
+                    <div class="price">Price: P20 000</div>
+                <button onclick="addToCart( 'Blue Mclaren Richard Mille Watch', 20000)">
                     Add to Cart
                 </button>
             </div>
@@ -334,7 +343,9 @@
                 <figure>
                     <img src="images/jewellery/transluscent flower.jpg" alt="Translucent Flower" class="img-fluid">
                 </figure>
-                <button class="AddToCart">
+                <h2>Translucent Flower</h2>
+                    <div class="price">Price: P100</div>
+                <button onclick="addToCart( 'Translucent Flower', 100)">
                     Add to Cart
                 </button>
             </div>
@@ -392,7 +403,7 @@ function onCheckout() {
     alert('Your cart is empty.');
     return;
   }
-  window.location.href = 'checkout.html';
+  window.location.href = 'checkout-message.html';
 }
 
 function updateCart() {
