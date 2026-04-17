@@ -55,6 +55,12 @@ button:active {animation: bounce 0.25s;}
   100% { transform: scale(1); }
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 .header-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
