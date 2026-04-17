@@ -130,8 +130,13 @@ button:active {animation: bounce 0.25s;}
   .coloured-jewellery, .gold-jewellery, .silver-jewellery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-left: 0; }
   .coloured-jewellery img, .gold-jewellery img, .silver-jewellery img { width: 100%; height: 150px; object-fit: cover; margin-left: 0; }
 
-  .footer-grid { grid-template-columns: repeat(2, 1fr) ; gap: 10px; }
+  .footer-grid { grid-template-columns: repeat(2, 1fr) ; gap: 20px; }
   .footer-links span {overflow-wrap: break-word; }
 
   .featured-grid { grid-template-columns: repeat(2, 1fr); gap: 10px;}
+
+  .header-content-left img { width: 80%; height: auto; }
+
+  .footer img { width: 120px; height: auto; }
 }
+
