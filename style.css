@@ -133,5 +133,5 @@ button:active {animation: bounce 0.25s;}
   .footer-grid { grid-template-columns: repeat(2, 1fr) ; gap: 10px; }
   .footer-links span {overflow-wrap: break-word; }
 
-  .featured-grid img { grid-template-columns: repeat(2, 1fr); gap: 10px;}
+  .featured-grid { grid-template-columns: repeat(2, 1fr); gap: 10px;}
 }
