@@ -196,7 +196,7 @@ header {
   .featured-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; text-align: center;}
   .featured-grid img {display: block; margin: 0 auto;}
 
-  .header-content-left img { width: 80%; height: 200px; }
+  .header-content-left img { width: 90%; height: 200px; }
   .header-content-right h1 {font-size: 38px;}
 
   .footer img { width: 170px; height: 175px; }
