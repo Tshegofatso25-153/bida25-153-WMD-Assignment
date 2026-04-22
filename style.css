@@ -15,7 +15,7 @@ body {font-family: serif; background-color:  #fff;}
 .footer-links a { color: #a1805c; text-decoration: none; }
 .footer-links a:hover { text-decoration: underline; }
 .footer-links span { color: #a1805c; }
-.footer img { width: 250px; height: 250px;}
+.footer img { width: 250px; height: 150px;}
 .footer-bottom { border-top: 0.5px solid #a1805c; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; }
 .footer-bottom span { color: #a1805c; }
 .footer-copy {font-size: 11px; color: #a1805c; }
