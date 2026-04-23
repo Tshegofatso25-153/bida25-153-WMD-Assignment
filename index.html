@@ -72,9 +72,18 @@
         </div>
 
         <div class="homepage-slideshow">
-          <img src="Copilot_20260422_192802.png" alt="Logo image">
-          <img src="dark grey background logo intials.png" alt="Logo image">
-        </div>
+          <div class="slide">
+            <img src="images/slideshow/David H feedback.png">
+          </div>
+
+          <div class="slide">
+            <img src="images/slideshow/Lerato M feedback.png">
+          </div>
+
+          <div class="slide">
+            <img src="images/slideshow/Palesa R feedback.png">
+          </div>
+        </div> 
 
     <main class="main-container">
       <div class="header-content-left">
@@ -256,6 +265,23 @@ document.addEventListener('click', function(e) {
   }
 });
 </script>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let slides = document.getElementsByClassName("slide");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) { slideIndex = 1 }
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 3000); 
+}
+</script>
+
 
 </body>
 </html>
