@@ -349,8 +349,8 @@
         </div>
     </footer>
 
-     <script>
-let cart = [];
+<script>
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 function addToCart(name, price) {
   const existing = cart.find(item => item.name === name);
@@ -384,6 +384,7 @@ function onCheckout() {
 }
 
 function updateCart() {
+  localStorage.setItem('cart', JSON.stringify(cart));
   const cartItems = document.getElementById('cart-items');
   const cartCount = document.getElementById('cart-count');
   const cartTotal = document.getElementById('cart-total');
@@ -425,6 +426,7 @@ document.addEventListener('click', function(e) {
     document.getElementById('cartDropdown').style.display = 'none';
   }
 });
+updateCart()
 </script>
 
 </body>

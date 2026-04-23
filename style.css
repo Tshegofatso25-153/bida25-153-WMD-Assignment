@@ -148,9 +148,8 @@ header {
 
 .homepage-slideshow img {
   width: 100%;
-  height: 90%;        
+  height: 50%;        
   object-fit: contain; 
-
 }
 
 
@@ -181,5 +180,15 @@ header {
   .header-content-right h1 {font-size: 35px;}
 
   .footer img { width: 170px; height: 175px; }
+
+  .homepage-slideshow {
+    height: auto;
+    margin-bottom: 0;
+  }
+  .homepage-slideshow img {
+    height: auto;
+    width: 100%;
+  }
 }
+
 
