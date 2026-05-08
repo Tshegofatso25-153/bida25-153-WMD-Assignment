@@ -5,7 +5,7 @@
 .navbar { display: flex; justify-content: space-between; align-items: center; background-color: #443e38; padding: 10px 20px; }
 .nav-links { color: white; text-decoration: none; padding: 15px; display:flex; justify-content: flex-end; }
 
-body {font-family: serif; background-color:  #fff;}
+body {font-family: serif; background-color:  #ffffff;}
 
 .footer { background: #443e38; padding: 40px 32px 10px; margin-top: 40px;}
 .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 32px; margin-bottom: 0; }
@@ -97,6 +97,7 @@ header {
 .cart-dropdown {
   display: none;
   position: absolute;
+  overflow-y: auto;
   right: 0;
   top: 45px;
   width: 280px;
@@ -106,6 +107,10 @@ header {
   padding: 15px;
   z-index: 1000;
   color: #443e38;
+}
+#cart-items {
+  max-height: 400px;        
+  overflow-y: auto;         
 }
 .featured-grid {
   display: grid;
