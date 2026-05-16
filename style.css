@@ -330,7 +330,7 @@ header {
   color: #443e38;
 }
 #cart-items {
-  max-height: 400px;        
+  max-height: 200px;        
   overflow-y: auto;         
 }
 
