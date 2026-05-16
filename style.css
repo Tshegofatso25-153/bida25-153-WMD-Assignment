@@ -502,3 +502,9 @@ header {
     width: 100%;
   }
 }
+@media (max-height: 500px) and (orientation: landscape) {
+  .navbar-collapse {
+    max-height: 60vh;
+    overflow-y: auto;
+  }
+}
