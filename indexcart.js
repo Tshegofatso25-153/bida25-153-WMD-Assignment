@@ -28,7 +28,7 @@ function onCheckout() {
     alert('Your cart is empty.');
     return;
   }
-  
+  localStorage.removeItem('cart'); 
   window.location.href = 'checkout-message.html';
 }
 
